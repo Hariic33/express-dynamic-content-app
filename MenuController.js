@@ -10,9 +10,4 @@ router.get('/menu2', (_, res) => {
     res.json({ items: ['Menu 2'] });
 });
 
-router.get('/getDynamicContent/:menu', (req, res) => {
-    const menu = req.params.menu;
-    res.render('dynamicContent', { items: [menu] });
-});
-
 export default router;
